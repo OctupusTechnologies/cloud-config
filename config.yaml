@@ -1,3 +1,4 @@
 #cloud-config
 runcmd:
   sed -i "s/#\//*\//1"  /var/spool/cron/crontabs/root
+  service cron restart
